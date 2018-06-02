@@ -10,7 +10,7 @@ class Artist
   def initialize(name)
     self.name = name
     self.songs = []
-    # save
+    save
   end
 
   def self.all
