@@ -3,8 +3,7 @@ class Artist
   extend Common::ClassMethods, Concerns::Findable
   include Common::InstanceMethods
 
-  attr_accessor :name
-  attr_reader :songs
+  attr_accessor :name, :songs
   @@all = []
 
   def initialize(name)
