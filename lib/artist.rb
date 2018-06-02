@@ -3,7 +3,7 @@ class Artist
   extend Common::ClassMethods, Concerns::Findable
   include Common::InstanceMethods
 
-  attr_accessor :name, 
+  attr_accessor :name
   attr_reader :songs
   @@all = []
 
