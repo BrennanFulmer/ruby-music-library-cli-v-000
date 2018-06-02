@@ -39,7 +39,6 @@ class Song
     musician = Artist.find_or_create_by_name(band)
     type = Genre.find_or_create_by_name(style[0...-4])
     new_song = self.new(title, musician, type)
-    # all.pop
     new_song
   end
   
