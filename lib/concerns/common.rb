@@ -13,7 +13,7 @@ module Common
 
     def create(name)
       fresh = self.new(name)
-      save
+      self.class.save
       fresh
     end
   end
