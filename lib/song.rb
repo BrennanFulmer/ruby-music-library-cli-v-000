@@ -18,7 +18,8 @@ class Song
   end
   
   def artist=(artist)
-    artist.add_song(self) if self.artist == nil
+    self.artist = artist
+    artist.add_song(self)
   end
   
   def genre=(genre)
